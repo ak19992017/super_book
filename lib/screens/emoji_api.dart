@@ -91,9 +91,10 @@ class _MyEmojiState extends State<MyEmoji> {
                             crossAxisCount: 6),
                     itemCount: snapshot.data!.length,
                     itemBuilder: ((context, index) {
-                      return SelectableText(
+                      return Text(
                         snapshot.data![index].character,
-                        style: const TextStyle(fontSize: 50),
+                        style: TextStyle(
+                            fontSize: MediaQuery.of(context).size.width / 8),
                       );
                     }),
                   ),

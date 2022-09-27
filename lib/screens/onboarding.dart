@@ -40,7 +40,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   ButtonStyle buttonStyle = ElevatedButton.styleFrom(
     shape: const CircleBorder(),
-    primary: Colors.redAccent,
+    backgroundColor: Colors.redAccent,
   );
   @override
   Widget build(BuildContext context) {
